@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
    name='tscache',
-   version='1.0',
+   version='1.0.1',
    description='Time Series Data Cache',
    url='https://github.com/bodhion/tscache',
    author='bodhion',

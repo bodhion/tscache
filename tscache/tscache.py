@@ -121,7 +121,9 @@ def _fetch_block(
 
         _save_block_to_path(path, block)
 
-    return block[start_index:end_index]
+    offset = block_size - len(block)
+
+    return block[start_index-offset:end_index-offset]
 
 
 class TimeSeriesCache:
