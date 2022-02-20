@@ -123,6 +123,9 @@ def _fetch_block(
 
     offset = block_size - len(block)
 
+    start_index = 0 if start_index is None else start_index
+    end_index = len(block) if start_index is None else end_index
+
     return block[start_index-offset:end_index-offset]
 
 
